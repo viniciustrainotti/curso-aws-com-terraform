@@ -5,7 +5,7 @@ locals {
   object_name = "meu-arquivo-gerado-de-um-template"
 
   common_tags = {
-    "Owner" = "Cleber Gasparoto"
+    "Owner" = "Vinícius Trainotti"
     "Year"  = "2021"
   }
 }
