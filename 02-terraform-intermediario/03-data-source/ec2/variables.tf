@@ -1,7 +1,7 @@
 variable "aws_region" {
   type        = string
   description = ""
-  default     = "eu-central-1"
+  default     = "us-east-1"
 }
 
 variable "aws_profile" {
@@ -13,5 +13,5 @@ variable "aws_profile" {
 variable "instance_type" {
   type        = string
   description = ""
-  default     = "t3.micro"
+  default     = "t2.micro"
 }
