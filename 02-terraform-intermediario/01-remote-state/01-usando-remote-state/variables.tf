@@ -1,7 +1,7 @@
 variable "aws_region" {
   type        = string
   description = ""
-  default     = "eu-central-1"
+  default     = "us-east-1"
 }
 
 variable "aws_profile" {
@@ -13,11 +13,11 @@ variable "aws_profile" {
 variable "ami" {
   type        = string
   description = ""
-  default     = "ami-03c3a7e4263fd998c"
+  default     = "ami-01cc34ab2709337aa"
 }
 
 variable "instance_type" {
   type        = string
   description = ""
-  default     = "t3.micro"
+  default     = "t2.micro"
 }

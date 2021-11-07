@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "eu-central-1"
+  region  = "us-east-1"
   profile = "tf014"
 }
 
@@ -26,22 +26,22 @@ resource "aws_s3_bucket" "remote-state" {
   tags = {
     Description = "Stores terraform remote state files"
     ManagedBy   = "Terraform"
-    Owner       = "Cleber Gasparoto"
-    CreatedAt   = "2021-01-24"
+    Owner       = "Vinícius Trainotti"
+    CreatedAt   = "2021-11-07"
   }
 }
 
-resource "aws_dynamodb_table" "lock-table" {
-  name           = "tflock-${aws_s3_bucket.remote-state.bucket}"
-  read_capacity  = 5
-  write_capacity = 5
-  hash_key       = "LockID"
+# resource "aws_dynamodb_table" "lock-table" {
+#   name           = "tflock-${aws_s3_bucket.remote-state.bucket}"
+#   read_capacity  = 5
+#   write_capacity = 5
+#   hash_key       = "LockID"
 
-  attribute {
-    name = "LockID"
-    type = "S"
-  }
-}
+#   attribute {
+#     name = "LockID"
+#     type = "S"
+#   }
+# }
 
 output "remote_state_bucket" {
   value = aws_s3_bucket.remote-state.bucket
