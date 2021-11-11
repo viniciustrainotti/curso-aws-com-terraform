@@ -1,5 +1,5 @@
-bucket         = "tfstate-968339500772"
+bucket         = "tfstate-952214114241"
 key            = "03-static-website/terraform.tfstate"
-region         = "eu-central-1"
+region         = "us-east-1"
 profile        = "tf014"
-dynamodb_table = "tflock-tfstate-968339500772"
+dynamodb_table = "tflock-tfstate-952214114241"

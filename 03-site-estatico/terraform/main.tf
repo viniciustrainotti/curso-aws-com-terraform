@@ -15,7 +15,8 @@ terraform {
       version = "2.2.0"
     }
   }
-
+  # cd ../bucket-remote-state
+  # executar com o dynamodb
   backend "s3" {}
 }
 
