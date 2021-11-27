@@ -38,7 +38,7 @@ resource "aws_s3_bucket" "remote-state" {
         Description = "Stores terraform remote state files"
         ManagedBy   = "Terraform"
         Owner       = "Vinícius Trainotti"
-        CreatedAt   = "2021-11-24"
+        CreatedAt   = "2021-11-26"
     }
 }
 
