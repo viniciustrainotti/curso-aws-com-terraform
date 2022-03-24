@@ -1,22 +1,37 @@
-import logo from './logo.svg';
+import perfil from './img/perfil.png';
+import github from './img/github.png';
+import linkedin from './img/linkedin.png';
+import instagram from './img/instagram.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={perfil} className="App-perfil" alt="Vinícius Trainotti" />
         <p>
-          Curso AWS com Terraform
+          Hello! I'm Vinícius Trainotti
         </p>
-        <a
-          className="App-link"
-          href="https://github.com/viniciustrainotti"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub - Vinícius Trainotti
-        </a>
+        <div >
+          <a
+            href="https://github.com/viniciustrainotti"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src={ github } className="Logos" alt="Github"/>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vinicius-trainotti/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src={ linkedin } className="Logos" alt="LinkedIn"/>
+          </a>
+          <a
+            href="https://www.instagram.com/trainotti_"
+            target="_blank"
+            rel="noopener noreferrer">
+            <img src={ instagram } className="Logos" alt="Instagram"/>
+          </a>
+        </div>
       </header>
     </div>
   );
